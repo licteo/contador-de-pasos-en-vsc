@@ -2,7 +2,7 @@
   "name": "Contador de Pasos",
   "short_name": "Pasos",
   "description": "App PWA para contar tus pasos diarios",
-  "start_url": "/",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#4CAF50",

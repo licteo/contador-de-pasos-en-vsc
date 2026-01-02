@@ -1,10 +1,10 @@
 const CACHE_NAME = 'contador-pasos-v1';
 const urlsToCache = [
-    '/',
-    '/index.html',
-    '/css/style.css',
-    '/js/app.js',
-    '/manifest.json'
+    './',
+    './index.html',
+    './css/style.css',
+    './js/app.js',
+    './manifest.json'
 ];
 
 // Instalar service worker
@@ -61,7 +61,7 @@ self.addEventListener('fetch', (event) => {
                 return response;
             }).catch(() => {
                 // Devolver página offline si existe
-                return caches.match('/index.html');
+                return caches.match('./index.html');
             });
         })
     );
